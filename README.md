@@ -1,3 +1,2 @@
 # Intro-Programming-Project
-index.html
-"my first commit"
+"Kenneth Ward Jr."
