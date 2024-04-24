@@ -29,3 +29,33 @@ h1.your-name {
     padding: 10px;
     margin-bottom: 10px;
 }
+#experience {
+    display:flex;
+    flex-direction: column;
+}
+.expereicne-item {
+    display: flex;
+    margin-bottom:20px;
+}
+.job-title{
+    flex: 1;
+    font-weight: bold;
+}
+.job-dates {
+    margin-left:20px;
+}
+.job-description{
+    margin-top: 5-x;
+}
+
+#connect {
+    display: flex;
+    justify-content: space-between;
+}
+.social-links li a{
+    color: #333;
+    text-decoration: none;
+    background-color: #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
