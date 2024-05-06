@@ -30,8 +30,9 @@ h1.your-name {
     margin-bottom: 10px;
 }
 #experience {
-    display:flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap:20px;
 }
 .experience-item {
     display: flex;
@@ -44,18 +45,44 @@ h1.your-name {
 .job-dates {
     margin-left:20px;
 }
-.job-description{
-    margin-top: 5-x;
+.job-description {
+    margin-top: 5px;
 }
-
 #connect {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
 }
-.social-links li a{
+.social-links li a {
     color: #333;
     text-decoration: none;
     background-color: #ccc;
     padding: 5px 10px;
     border-radius: 5px;
 }
+/* Desktop styles */
+@media (max-width: 768px) {
+    body {
+        font-size:16px;
+        color: yellow;
+    }
+}
+/*Tablet styles */
+@media (min-width: 481px) and (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 20px;
+        color: green;
+    }
+    .experience-list {
+        padding: 15px;
+        background-color: #D3D3D3;
+    }
+}
+/*Mobile Styles */
+@media(max-width: 480px) {  
+    h1.KennethWard {
+        font-size: 20px;
+        font-style: italic;
+    }
+}
+    
